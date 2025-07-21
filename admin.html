@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Admin Panel</title>
+</head>
+<body>
+    <h2>Заявки</h2>
+    <ul>
+        {% for row in rows %}
+            <li><strong>{{ row[1] }}</strong> ({{ row[2] }}): {{ row[3] }}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
