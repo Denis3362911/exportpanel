@@ -1,11 +1,15 @@
-templates/index.html
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Export Panel</title>
+    <title>ExportPanel — Заявка</title>
 </head>
 <body>
-    <h1>Welcome to Export Panel</h1>
-    <p>This is your WebApp interface.</p>
+    <h2>Оставить заявку</h2>
+    <form method="POST" action="/submit">
+        <input type="text" name="name" placeholder="Имя" required><br>
+        <input type="email" name="email" placeholder="Email" required><br>
+        <textarea name="message" placeholder="Сообщение" required></textarea><br>
+        <button type="submit">Отправить</button>
+    </form>
 </body>
 </html>
